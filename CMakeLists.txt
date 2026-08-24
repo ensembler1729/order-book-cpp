@@ -9,9 +9,10 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_executable(OrderBook
+    src/main.cpp
     src/OrderBook.cpp
 )
 
-target_include_directories(OrderBook PRIVATE
-    ${PROJECT_SOURCE_DIR}/include
+target_include_directories(${PROJECT_NAME} PRIVATE
+    ${PROJECT_SOURCE_DIR}/src
 )
